@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.DashboardFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button android:id="@+id/bikerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biker"/>
+
+        <Button android:id="@+id/vendorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vendor"/>
+
+        <Button android:id="@+id/timerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Ride (Timer)"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

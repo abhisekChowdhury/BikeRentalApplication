@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.bikeapplication.Fragments.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.bikeapplication.Fragments.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_bikeListingFragment"
+            app:destination="@id/bikeListingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bikeListingFragment"
+        android:name="com.example.bikeapplication.Fragments.BikeListingFragment"
+        android:label="fragment_bike_listing"
+        tools:layout="@layout/fragment_bike_listing" >
+        <action
+            android:id="@+id/action_bikeListingFragment_to_displayBikeDetailsFragment"
+            app:destination="@id/displayBikeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/displayBikeDetailsFragment"
+        android:name="com.example.bikeapplication.Fragments.DisplayBikeDetailsFragment"
+        android:label="fragment_display_bike_details"
+        tools:layout="@layout/fragment_display_bike_details" >
+        <argument
+            android:name="selectedData"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.bikeapplication.Fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.bikeapplication.Fragments.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>
