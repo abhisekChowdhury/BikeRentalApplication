@@ -37,7 +37,6 @@ class LoginFragment : Fragment() {
         }
 
         binding.btnUserLogin.setOnClickListener {
-          //  checkUser()
 
             val userName = binding.etUserLogin.text.toString()
             val password = binding.etUserPassword.text.toString()
@@ -46,18 +45,17 @@ class LoginFragment : Fragment() {
             viewModel.liveDataUser.observe(viewLifecycleOwner, Observer {
                 if(it != null) {
                     if (it.Password == password) {
-                        findNavController().navigate(R.id.action_loginFragment_to_dashboardFragment)
+                        val action = LoginFragmentDirections.actionLoginFragmentToDashboardFragment(it.UserName)
+                        findNavController().navigate(action)
+                        //findNavController().navigate(R.id.action_loginFragment_to_dashboardFragment)
                     }else{
+                        Log.i("User: ",it.FullName)
                         Toast.makeText(requireContext(), "Please check the password!", Toast.LENGTH_LONG).show()
                     }
-//                    binding.bikeImage.setImageResource(R.drawable.common_full_open_on_phone)
-//                    binding.bikePriceTextView.setText(it.Price)
-//                    binding.descriptionTextView.setText("Description: " + it.Description)
-//                    binding.ratingTextView.setText("Rating:" + it.UserRating)
-//                    binding.commentsTextView.setText("User Comments: " + it.UserComments)
                 }
 
                 else {
+                    Toast.makeText(requireContext(), "User does not exist!", Toast.LENGTH_LONG).show()
                     Log.i("error","no data found")
                 }
 

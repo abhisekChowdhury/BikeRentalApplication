@@ -118,12 +118,4 @@ class MainViewModel : ViewModel() {
         })
     }
 
-//    fun addUserAccount(userAccount: Users) {
-//        viewModelScope.launch {
-//            withContext(Dispatchers.IO) {
-//                database?.userAccountsDao()?.insertUser(userAccount)
-//            }
-//        }
-//    }
-
 }

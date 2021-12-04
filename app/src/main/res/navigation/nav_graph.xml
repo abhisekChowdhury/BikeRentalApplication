@@ -31,6 +31,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_vendorFragment"
             app:destination="@id/vendorFragment" />
+        <argument
+            android:name="userName"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/bikeListingFragment"
