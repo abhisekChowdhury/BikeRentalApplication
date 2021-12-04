@@ -8,6 +8,7 @@ import com.example.barbershopapp.retrofit.RetroServiceInterface
 import com.example.bikeapplication.Entities.BikeEntity
 import com.example.bikeapplication.Entities.SingleBikeEntity
 import com.example.bikeapplication.Entities.SingleUserEntity
+import com.example.bikeapplication.Entities.UserEntity
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -15,10 +16,12 @@ import retrofit2.Response
 class MainViewModel : ViewModel() {
     lateinit var liveDataList: MutableLiveData<List<BikeEntity>?>
     lateinit var liveData: MutableLiveData<BikeEntity?>
+    lateinit var liveDataUser: MutableLiveData<UserEntity?>
 
     init {
         liveDataList = MutableLiveData()
         liveData = MutableLiveData()
+        liveDataUser = MutableLiveData()
     }
 
     fun backendBikeList() {
@@ -55,6 +58,24 @@ class MainViewModel : ViewModel() {
                 response: Response<BikeEntity>
             ) {
                 liveData?.postValue(response.body())
+            }
+        })
+    }
+
+    fun backendgetusernamepassword(UserName:String) {
+        val retroInstance = RetroInstance.getRetroInstance()
+        val retroService  = retroInstance.create(RetroServiceInterface::class.java)
+        val call  = retroService.findusernamepassword(UserName)
+        call.enqueue(object : Callback<UserEntity> {
+            override fun onFailure(call: Call<UserEntity>, t: Throwable) {
+                liveDataUser.postValue(null)
+            }
+
+            override fun onResponse(
+                call: Call<UserEntity>,
+                response: Response<UserEntity>
+            ) {
+                liveDataUser?.postValue(response.body())
             }
         })
     }

@@ -38,7 +38,7 @@ class DisplayBikeDetailsFragment : Fragment() {
                 binding.bikePriceTextView.setText(it.Price)
                 binding.descriptionTextView.setText("Description: " + it.Description)
                 binding.ratingTextView.setText("Rating:" + it.UserRating)
-                binding.commentsTextView.setText("User Comments: " + it.UserComments.contentToString())
+                binding.commentsTextView.setText("User Comments: " + it.UserComments)
             }
 
             else {

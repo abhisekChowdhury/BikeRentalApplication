@@ -4,6 +4,7 @@ package com.example.barbershopapp.retrofit
 import com.example.bikeapplication.Entities.BikeEntity
 import com.example.bikeapplication.Entities.SingleBikeEntity
 import com.example.bikeapplication.Entities.SingleUserEntity
+import com.example.bikeapplication.Entities.UserEntity
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -25,6 +26,10 @@ interface RetroServiceInterface {
     @Headers("Accept:application/json", "Content-Type:application/json")
     fun addbike(@Body params: SingleBikeEntity):Call<Any>
 
+    @GET("findusernamepassword/{username}")
+    fun findusernamepassword(
+        @Path("username") UserName: String
+    ): Call<UserEntity>
 
 //    @GET("getSingle/{id}")
 //    fun getSingleBarber(

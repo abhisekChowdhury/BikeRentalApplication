@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.bikeapplication.R
 import com.example.bikeapplication.ViewModel.MainViewModel
 import com.example.bikeapplication.databinding.MainFragmentBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class MainFragment : Fragment() {
 
@@ -20,10 +21,14 @@ class MainFragment : Fragment() {
     private lateinit var binding: MainFragmentBinding
     private lateinit var viewModel: MainViewModel
 
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         binding = MainFragmentBinding.inflate(inflater,container,false)
 
@@ -37,6 +42,8 @@ class MainFragment : Fragment() {
 
         return binding.root
     }
+
+
 
 
 }
