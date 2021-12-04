@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.navArgs
-import com.example.bikeapplication.Fragments.MainViewModel
+import com.example.bikeapplication.ViewModel.MainViewModel
 import com.example.bikeapplication.R
 import com.example.bikeapplication.databinding.FragmentDisplayBikeDetailsBinding
 
@@ -38,7 +38,7 @@ class DisplayBikeDetailsFragment : Fragment() {
                 binding.bikePriceTextView.setText(it.Price)
                 binding.descriptionTextView.setText("Description: " + it.Description)
                 binding.ratingTextView.setText("Rating:" + it.UserRating)
-                binding.commentsTextView.setText("User Comments: " + it.UserComments) //We might need a listview adapter for this
+                binding.commentsTextView.setText("User Comments: " + it.UserComments.contentToString())
             }
 
             else {

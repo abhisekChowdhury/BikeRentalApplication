@@ -13,6 +13,19 @@ data class BikeEntity(
     val UserType: String
 )
 
+data class SingleBikeEntity(
+    val _id: Id,
+    val BikeType: String,
+    val Brand: String,
+    val Photo: String,
+    val Price: String,
+    val Description: String,
+    val Status: Boolean,
+    val UserComments: String,
+    val UserRating: String,
+    val UserType: String
+)
+
 //@Entity(tableName = "RideList")
 //data class RideList(
 //

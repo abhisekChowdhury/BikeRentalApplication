@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="navEditor-manualLayoutAlgorithm2">
+    <option name="myPositions">
+      <map>
+        <entry key="nav_graph.xml">
+          <value>
+            <LayoutPositions>
+              <option name="myPositions">
+                <map>
+                  <entry key="addBikeFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="1237" />
+                            <option name="y" value="377" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="bikeListingFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="1002" />
+                            <option name="y" value="52" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_bikeListingFragment_to_displayBikeDetailsFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="dashboardFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="744" />
+                            <option name="y" value="54" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_dashboardFragment_to_bikeListingFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_dashboardFragment_to_vendorFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_dashboardFragment_to_weatherFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="displayBikeDetailsFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="1233" />
+                            <option name="y" value="54" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="loginFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="500" />
+                            <option name="y" value="54" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_loginFragment_to_dashboardFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="mainFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
+                            <option name="y" value="54" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_mainFragment_to_loginFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_mainFragment_to_registrationFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="registrationFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="257" />
+                            <option name="y" value="265" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_registrationFragment_to_loginFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="vendorFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="1007" />
+                            <option name="y" value="377" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_vendorFragment_to_addBikeFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="weatherFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="1003" />
+                            <option name="y" value="-257" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </LayoutPositions>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

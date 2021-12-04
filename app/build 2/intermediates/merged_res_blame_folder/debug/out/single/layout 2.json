@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_weather.xml",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/fragment_weather.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_vendor.xml",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/fragment_vendor.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_add_bike.xml",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/fragment_add_bike.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_dashboard.xml",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/main_fragment.xml",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/main_fragment.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/list_item.xml",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/list_item.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_registration.xml",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/fragment_registration.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_display_bike_details.xml",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/fragment_display_bike_details.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_login.xml",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/fragment_login.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_bike_listing.xml",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/fragment_bike_listing.xml"
+    }
+]

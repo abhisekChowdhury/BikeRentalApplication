@@ -5,9 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import com.example.bikeapplication.Entities.SingleUserEntity
 import com.example.bikeapplication.R
+import com.example.bikeapplication.ViewModel.MainViewModel
 import com.example.bikeapplication.databinding.FragmentRegistrationBinding
 
 class RegistrationFragment : Fragment() {
@@ -26,10 +29,25 @@ class RegistrationFragment : Fragment() {
             findNavController().navigateUp()
         }
 
+        //TO IMPLEMENT - CONDITION: CHECK IF USERNAME EXISTS IN MONGO DB
+        //
         binding.btnSaveUser.setOnClickListener {
-         //   saveUser()
-            findNavController().navigate(R.id.action_registrationFragment_to_loginFragment)
+            if (binding.etPassword.text.toString() == binding.etConfirmPassword.text.toString()) {
+                val fullName = binding.etName.text.toString()
+                val userName = binding.etUserName.text.toString()
+                val address = binding.etAddress.text.toString()
+                val password = binding.etPassword.text.toString()
+
+                val user = SingleUserEntity(fullName, userName, address, password)
+
+                viewModel.backendAddUser(user)
+
+                findNavController().navigate(R.id.action_registrationFragment_to_loginFragment)
+            }else{
+                Toast.makeText(requireContext(),"Please check your password!",Toast.LENGTH_LONG).show()
+            }
         }
+
 
         return binding.root
     }

@@ -1,0 +1,134 @@
+[
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/layout_fragment_display_bike_details.xml.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/fragment_display_bike_details.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/layout_fragment_dashboard.xml.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/layout_fragment_bike_listing.xml.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/fragment_bike_listing.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/navigation_nav_graph.xml.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/layout_fragment_vendor.xml.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/fragment_vendor.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/drawable_pressure.png.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/drawable/pressure.png"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/layout_fragment_login.xml.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/fragment_login.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/layout_fragment_registration.xml.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/fragment_registration.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/layout_list_item.xml.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/list_item.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/drawable_humidity.png.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/drawable/humidity.png"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/drawable_gradient_bg.xml.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/drawable/gradient_bg.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/drawable_wind.png.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/drawable/wind.png"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/drawable_sunset.png.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/drawable/sunset.png"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/layout_fragment_add_bike.xml.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/fragment_add_bike.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/drawable_info.png.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/drawable/info.png"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/layout_main_fragment.xml.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/main_fragment.xml"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/drawable_sunrise.png.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/drawable/sunrise.png"
+    },
+    {
+        "merged": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/build/intermediates/merged_res/debug/layout_fragment_weather.xml.flat",
+        "source": "/Users/abhisek/Documents/Douglas/Semester 8/Special Topics in Mobile App Development/Project/BikeRentalApplication/app/src/main/res/layout/fragment_weather.xml"
+    }
+]

@@ -1,6 +1,5 @@
 package com.example.bikeapplication.Fragments
 
-import android.os.AsyncTask
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,8 +8,8 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.bikeapplication.R
+import com.example.bikeapplication.ViewModel.MainViewModel
 import com.example.bikeapplication.databinding.FragmentDashboardBinding
-import kotlinx.android.synthetic.main.fragment_dashboard.*
 
 class DashboardFragment : Fragment() {
 
@@ -29,12 +28,19 @@ class DashboardFragment : Fragment() {
         binding = FragmentDashboardBinding.inflate(inflater,container,false)
 
 
-
-        binding.vendorButton.setOnClickListener {
-            //Make Vendor Form
+        binding.btnWeather.setOnClickListener {
+            findNavController().navigate(R.id.action_dashboardFragment_to_weatherFragment)
         }
 
-        return inflater.inflate(R.layout.fragment_dashboard, container, false)
+        binding.vendorButton.setOnClickListener {
+            findNavController().navigate(R.id.action_dashboardFragment_to_vendorFragment)
+        }
+
+        binding.bikerButton.setOnClickListener {
+            findNavController().navigate(R.id.action_dashboardFragment_to_bikeListingFragment)
+        }
+
+        return binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -42,9 +48,7 @@ class DashboardFragment : Fragment() {
 
 
 
-        bikerButton.setOnClickListener {
-            findNavController().navigate(R.id.bikeListingFragment)
-        }
+
 
         //weatherTask().execute()
     }

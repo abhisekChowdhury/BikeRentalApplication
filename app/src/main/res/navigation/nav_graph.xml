@@ -25,6 +25,12 @@
         <action
             android:id="@+id/action_dashboardFragment_to_bikeListingFragment"
             app:destination="@id/bikeListingFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_weatherFragment"
+            app:destination="@id/weatherFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_vendorFragment"
+            app:destination="@id/vendorFragment" />
     </fragment>
     <fragment
         android:id="@+id/bikeListingFragment"
@@ -62,4 +68,23 @@
             android:id="@+id/action_registrationFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="com.example.bikeapplication.Fragments.WeatherFragment"
+        android:label="fragment_weather"
+        tools:layout="@layout/fragment_weather" />
+    <fragment
+        android:id="@+id/vendorFragment"
+        android:name="com.example.bikeapplication.vendorFragment"
+        android:label="fragment_vendor"
+        tools:layout="@layout/fragment_vendor" >
+        <action
+            android:id="@+id/action_vendorFragment_to_addBikeFragment"
+            app:destination="@id/addBikeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addBikeFragment"
+        android:name="com.example.bikeapplication.addBikeFragment"
+        android:label="fragment_add_bike"
+        tools:layout="@layout/fragment_add_bike" />
 </navigation>

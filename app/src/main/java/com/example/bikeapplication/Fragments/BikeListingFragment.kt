@@ -12,6 +12,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.bikeapplication.Adapters.BikeListAdapter
+import com.example.bikeapplication.ViewModel.MainViewModel
 import com.example.bikeapplication.databinding.FragmentBikeListingBinding
 
 

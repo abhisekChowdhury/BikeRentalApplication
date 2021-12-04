@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.bikeapplication.R
+import com.example.bikeapplication.ViewModel.MainViewModel
 import com.example.bikeapplication.databinding.MainFragmentBinding
 
 class MainFragment : Fragment() {

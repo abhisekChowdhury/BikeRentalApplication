@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.bikeapplication.R
+import com.example.bikeapplication.ViewModel.MainViewModel
 import com.example.bikeapplication.databinding.FragmentLoginBinding
 
 class LoginFragment : Fragment() {
