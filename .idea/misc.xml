@@ -5,7 +5,7 @@
       <map>
         <entry key="app/src/main/res/layout/fragment_add_bike.xml" value="0.23541666666666666" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.4036458333333333" />
-        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.1625" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_registration.xml" value="0.37604166666666666" />
         <entry key="app/src/main/res/layout/fragment_vendor.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/fragment_weather.xml" value="0.37604166666666666" />
