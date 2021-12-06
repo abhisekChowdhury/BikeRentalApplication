@@ -5,10 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.barbershopapp.retrofit.RetroInstance
 import com.example.barbershopapp.retrofit.RetroServiceInterface
-import com.example.bikeapplication.Entities.BikeEntity
-import com.example.bikeapplication.Entities.SingleBikeEntity
-import com.example.bikeapplication.Entities.SingleUserEntity
-import com.example.bikeapplication.Entities.UserEntity
+import com.example.bikeapplication.Entities.*
 import com.example.bikeapplication.LocalDB.BikeApplicationViewModel
 import retrofit2.Call
 import retrofit2.Callback
@@ -18,12 +15,14 @@ class MainViewModel : ViewModel() {
     lateinit var liveDataList: MutableLiveData<List<BikeEntity>?>
     lateinit var liveData: MutableLiveData<BikeEntity?>
     lateinit var liveDataUser: MutableLiveData<UserEntity?>
+    lateinit var liveDataHistory: MutableLiveData<BookingHistoryEntity?>
     lateinit var liveBikeAppViewModel: BikeApplicationViewModel
 
     init {
         liveDataList = MutableLiveData()
         liveData = MutableLiveData()
         liveDataUser = MutableLiveData()
+        liveDataHistory = MutableLiveData()
     }
 
     fun backendBikeList() {
@@ -86,7 +85,7 @@ class MainViewModel : ViewModel() {
         val call  = retroService.adduser(body)
         call.enqueue(object : Callback<Any> {
             override fun onFailure(call: Call<Any>, t: Throwable) {
-                Log.i("failure add user ","failed")
+                Log.i("failure to add user ","failed")
             }
 
             override fun onResponse(
@@ -106,7 +105,7 @@ class MainViewModel : ViewModel() {
         val call  = retroService.addbike(body)
         call.enqueue(object : Callback<Any> {
             override fun onFailure(call: Call<Any>, t: Throwable) {
-                Log.i("failure add user ","failed")
+                Log.i("failure to add bike ","failed")
             }
 
             override fun onResponse(
@@ -119,4 +118,43 @@ class MainViewModel : ViewModel() {
             }
         })
     }
+
+    fun backendAddHistory(body: SingleBookingHistoryEntity) {
+        val retroInstance = RetroInstance.getRetroInstance()
+        val retroService  = retroInstance.create(RetroServiceInterface::class.java)
+        val call  = retroService.addbookinghistory(body)
+        call.enqueue(object : Callback<Any> {
+            override fun onFailure(call: Call<Any>, t: Throwable) {
+                Log.i("failure to add bookinghistory ","failed")
+            }
+
+            override fun onResponse(
+                call: Call<Any>,
+                response: Response<Any>
+            ) {
+                //liveBikeAppViewModel.insertListOfBikes(response.body()!!)
+                //Log.i("response add user ", "aaaaa")
+                //Log.i("Data: ", (response.body() as SingleUserEntity?).toString())
+            }
+        })
+    }
+
+    fun backendFindBookingHistoryByUserName(UserName:String) {
+        val retroInstance = RetroInstance.getRetroInstance()
+        val retroService  = retroInstance.create(RetroServiceInterface::class.java)
+        val call  = retroService.findbookingbyusername(UserName)
+        call.enqueue(object : Callback<BookingHistoryEntity> {
+            override fun onFailure(call: Call<BookingHistoryEntity>, t: Throwable) {
+                liveDataHistory.postValue(null)
+            }
+
+            override fun onResponse(
+                call: Call<BookingHistoryEntity>,
+                response: Response<BookingHistoryEntity>
+            ) {
+                liveDataHistory?.postValue(response.body())
+            }
+        })
+    }
+
 }

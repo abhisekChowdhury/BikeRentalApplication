@@ -11,6 +11,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.example.bikeapplication.Entities.SingleBookingHistoryEntity
+import com.example.bikeapplication.Entities.SingleUserEntity
 import com.example.bikeapplication.ViewModel.MainViewModel
 import com.example.bikeapplication.databinding.FragmentPaymentBinding
 
@@ -18,6 +20,15 @@ class FragmentPayment : Fragment() {
     private val args : FragmentPaymentArgs by navArgs()
     private lateinit var binding: FragmentPaymentBinding
     private lateinit var viewModel: MainViewModel
+
+    //For Booking history
+    private var FullName:String = ""
+    private var UserName:String = ""
+    private var BikeBrand:String = ""
+    private var VendorName:String = ""
+    private var AmountPaid:String = ""
+    private var PickupLocation:String = ""
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -28,10 +39,29 @@ class FragmentPayment : Fragment() {
         viewModel.backendBikeDetails(args.selectedData)
         viewModel.backendgetusernamepassword(args.userName)
 
-        binding.totalTextView.setText("$"+args.totalAmount)
+
+        AmountPaid = args.totalAmount
+        binding.totalTextView.setText("$"+AmountPaid)
+
+
+        viewModel.liveData.observe(viewLifecycleOwner, Observer {
+            if(it != null) {
+                BikeBrand = it.Brand
+                VendorName = it.VendorName
+                PickupLocation = it.PickupLocation
+            }else {
+                Log.i("error","no data found")
+            }
+        })
+
 
         viewModel.liveDataUser.observe(viewLifecycleOwner, Observer {
             if(it != null) {
+
+                //For Booking History
+                FullName = it.FullName
+                UserName = it.UserName
+
                 var user:String = it.FullName
                 binding.buttonBook.setOnClickListener {
                     val builder = AlertDialog.Builder(requireContext())
@@ -52,6 +82,10 @@ class FragmentPayment : Fragment() {
                 Log.i("error","no data found")
             }
         })
+
+        val history = SingleBookingHistoryEntity(AmountPaid, BikeBrand, FullName, PickupLocation, UserName, VendorName)
+        Log.i("SingleBookingHistory Added: ", AmountPaid+BikeBrand+FullName+PickupLocation+UserName+VendorName)
+        viewModel.backendAddHistory(history)
 
         return binding.root
     }

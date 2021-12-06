@@ -1,10 +1,7 @@
 package com.example.barbershopapp.retrofit
 
 
-import com.example.bikeapplication.Entities.BikeEntity
-import com.example.bikeapplication.Entities.SingleBikeEntity
-import com.example.bikeapplication.Entities.SingleUserEntity
-import com.example.bikeapplication.Entities.UserEntity
+import com.example.bikeapplication.Entities.*
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -34,27 +31,12 @@ interface RetroServiceInterface {
         @Path("username") UserName: String
     ): Call<UserEntity>
 
-//    @GET("getSingle/{id}")
-//    fun getSingleBarber(
-//        @Path("id") id: String
-//    ): Call<GetAllBarberItem>
-//
-//    @GET("getSingleAppointment/{id}")
-//    fun getSingleAppointment(
-//        @Path("id") id: String
-//    ): Call<GetAllAppointment>
-//
-//    @PUT("update/{id}")
-//    fun updateSingleBarber(
-//        @Path("id") id: String
-//    ): Call<GetAllBarberItem>
-//
-//    @POST("add")
-//    @Headers("Accept:application/json", "Content-Type:application/json")
-//    fun addSingleBarber(@Body params: GetSingleBarber):Call<Any>
-//
-//    @PATCH("patch/{id}")
-//    @Headers("Accept:application/json", "Content-Type:application/json")
-//    fun addAppointment(@Path("id")id: String, @Body params: GetSingleAppointment):Call<Any>
+    @GET("findbookingbyusername/{username}")
+    fun findbookingbyusername(
+        @Path("username") UserName: String
+    ): Call<BookingHistoryEntity>
 
+    @POST("addbookinghistory")
+    @Headers("Accept:application/json", "Content-Type:application/json")
+    fun addbookinghistory(@Body params: SingleBookingHistoryEntity):Call<Any>
 }
