@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
+    android:background="@drawable/gradient_bg"
     tools:context=".Fragments.addBikeFragment">
 
     <EditText
@@ -14,16 +15,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:hint="Brand Name"
         android:padding="10dp"
-        android:hint="Brand Name"/>
+        android:textColor="@color/white"
+        android:textColorHint="#FFFFFF" />
 
     <EditText
         android:id="@+id/editTextTextBikeType"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:hint="Bike Type"
         android:padding="10dp"
-        android:hint="Bike Type"/>
+        android:textColor="@color/white"
+        android:textColorHint="#FFFFFF" />
 
     <TextView
         android:layout_width="match_parent"
@@ -32,6 +37,7 @@
         android:padding="10dp"
         android:textSize="15sp"
         android:textStyle="bold"
+        android:textColor="@color/white"
         android:text="User Type:"/>
 
     <LinearLayout
@@ -50,12 +56,15 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Kids" />
+                android:text="Kids"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF" />
 
             <RadioButton
                 android:id="@+id/adultsRadioButton"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:textColor="@color/white"
                 android:layout_weight="1"
                 android:text="Adults" />
 
@@ -67,34 +76,40 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:hint="Bike Description"
         android:padding="10dp"
-        android:hint="Bike Description"/>
+        android:textColor="@color/white"
+        android:textColorHint="#FAF9F9" />
 
 
     <Spinner
         android:id="@+id/spinnerLocation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:entries="@array/bike_location"
         android:padding="10dp"
-        android:layout_marginTop="10dp"
-        />
+        android:textColor="@color/white" />
 
     <EditText
         android:id="@+id/editTextPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:hint="Bike Price per hour (CAD)"
         android:padding="10dp"
-        android:hint="Bike Price per hour (CAD)"/>
+        android:textColor="@color/white"
+        android:textColorHint="#FFFFFF" />
 
     <Button
         android:id="@+id/addBikeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:textColor="@color/white"
         android:layout_marginTop="120dp"
         android:padding="10dp"
+        android:background="@drawable/cornerbtn"
         android:text="Add Bike" />
 
 

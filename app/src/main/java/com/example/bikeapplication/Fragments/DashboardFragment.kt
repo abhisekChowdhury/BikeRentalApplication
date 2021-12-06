@@ -2,10 +2,8 @@ package com.example.bikeapplication.Fragments
 
 import android.os.Bundle
 import android.util.Log
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -26,6 +24,7 @@ class DashboardFragment : Fragment() {
     ): View? {
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         binding = FragmentDashboardBinding.inflate(inflater,container,false)
+        setHasOptionsMenu(true)
 
 
         binding.btnWeather.setOnClickListener {
@@ -44,6 +43,10 @@ class DashboardFragment : Fragment() {
             //findNavController().navigate(R.id.action_dashboardFragment_to_bikeListingFragment)
         }
 
+        binding.timerButton.setOnClickListener {
+            findNavController().navigate(R.id.action_dashboardFragment_to_timerFragment)
+        }
+
 
         viewModel.backendgetusernamepassword(args.userName)
         viewModel.liveDataUser.observe(viewLifecycleOwner, Observer {
@@ -60,6 +63,21 @@ class DashboardFragment : Fragment() {
         })
 
         return binding.root
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        val menuId = R.menu.menu
+        inflater.inflate(menuId, menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.about -> findNavController().navigate(R.id.action_dashboardFragment_to_aboutFragment)
+            R.id.help -> findNavController().navigate(R.id.action_dashboardFragment_to_helpFragment)
+            else -> super.onOptionsItemSelected(item)
+        }
+        return true
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

@@ -2,6 +2,11 @@
     <string name="app_name">BikeApplication</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="help">Bello 2021 \nFor user support contact: \nadmin@bello.ca</string>
+    <string name="about">Bello is a bike rental app that would both include individual renters and stores. Through the app, the user can compare different vendors based on the price, bike model, bike type, duration. By doing this we are hoping to help everyone get a chance to rent the bike they like at affordable prices.
+    The second perk of the app is for those individuals that are looking for an extra income. The app will act as a facilitator/trustee for both parties providing a streamlined process for bike rentals, navigating the city with suggested routes, paying for the service, and returning the bike.
+    </string>
+
 
     <string-array name="bike_location">
         <item>Bike Location</item>

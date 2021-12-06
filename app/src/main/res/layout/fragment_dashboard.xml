@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
     tools:context=".Fragments.DashboardFragment">
 
     <LinearLayout
@@ -20,6 +21,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:textSize="30dp"
+            android:textColor="@color/white"
             android:textStyle="bold"
             android:text="Bello!"
             />
@@ -32,32 +34,41 @@
             android:gravity="center"
             android:textSize="18sp"
             android:layout_marginTop="10dp"
+            android:textColor="@color/white"
             android:text="Welcome User"
             />
 
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:src="@drawable/bello_logos_white"/>
+
         <Button
             android:id="@+id/bikerButton"
+            style="@style/Widget.AppCompat.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
             android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/cornerbtn"
             android:text="Biker"
-            />
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/vendorButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vendor"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            app:layout_constraintBottom_toTopOf="@+id/timerButton"
-            />
+            android:background="@drawable/cornerbtn"
+            android:text="Vendor"
+            app:layout_constraintBottom_toTopOf="@+id/timerButton" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="50dp"
             android:orientation="horizontal">
 
             <Button
@@ -66,6 +77,7 @@
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:text="Start Ride (Timer)"
+                android:background="@drawable/cornerbtn"
                 android:layout_margin="2dp"
                 />
 
@@ -74,6 +86,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
+                android:background="@drawable/cornerbtn"
                 android:text="Logout"
                 android:layout_margin="2dp"
                 />
@@ -83,6 +96,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
+                android:background="@drawable/cornerbtn"
                 android:text="Weather"
                 android:layout_margin="2dp"
                 />

@@ -3,7 +3,8 @@
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@drawable/cornerbtn">
 
     <ImageView
         android:id="@+id/bikeListImageView"
@@ -18,18 +19,21 @@
         <TextView android:id="@+id/bikeNameTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Bike Name"/>
 
         <TextView android:id="@+id/vendorNameTextView"
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Vendor Name"/>
 
         <TextView android:id="@+id/costPerHourTextView"
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Price"/>
 
     </LinearLayout>

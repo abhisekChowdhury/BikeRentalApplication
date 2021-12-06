@@ -1,86 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
     tools:context="Fragments.DisplayBikeDetailsFragment">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/bikeImage"
-            android:layout_gravity="center"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:src="@drawable/bello_logos_white"/>
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/bello_logos_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/bikeTitleTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bikeImage" />
 
         <TextView
-            android:layout_gravity="center"
             android:id="@+id/bikePriceTextView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <ScrollView
-            android:id="@+id/bikeDescription"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:padding="10dp"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <TextView
-                    android:padding="5dp"
-                    android:id="@+id/descriptionTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-                <TextView
-                    android:padding="5dp"
-                    android:id="@+id/ratingTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-                <TextView
-                    android:padding="5dp"
-                    android:id="@+id/commentsTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
-
-        </ScrollView>
-
-        <Button
-            android:text="Check Map"
-            android:layout_gravity="center"
-            android:id="@+id/checkMapButton"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"/>
-        <Button
-            android:text="Book"
             android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bikeTitleTextView" />
+
+        <Button
+            android:id="@+id/checkMapButton"
+            android:layout_width="120dp"
+            android:layout_height="101dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            app:icon="@android:drawable/ic_dialog_map"
+            app:iconSize="80dp"
+            app:layout_constraintBottom_toTopOf="@+id/bikeTitleTextView"
+            app:layout_constraintEnd_toStartOf="@+id/bikeImage"
+            app:layout_constraintHorizontal_bias="0.057"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
             android:id="@+id/bookBikeButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"/>
+            android:layout_gravity="center"
+            android:background="@drawable/cornerbtn"
+            android:padding="10dp"
+            android:text="Book"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/commentsTextView"
+            tools:ignore="TextContrastCheck" />
 
         <Button
             android:id="@+id/cancelButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="124dp"
+            android:layout_height="114dp"
             android:layout_gravity="center"
+            android:background="@android:color/transparent"
             android:padding="10dp"
-            android:text="Cancel"/>
+            app:icon="@android:drawable/ic_menu_revert"
+            app:iconSize="80dp"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/bikeTitleTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.933"
+            app:layout_constraintStart_toEndOf="@+id/bikeImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.085"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bikePriceTextView" />
+
+        <TextView
+            android:id="@+id/ratingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionTextView" />
+
+        <TextView
+            android:id="@+id/commentsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingTextView" />
 
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
