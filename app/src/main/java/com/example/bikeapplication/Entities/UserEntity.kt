@@ -1,6 +1,11 @@
 package com.example.bikeapplication.Entities
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import com.google.gson.annotations.SerializedName
+
 data class UserEntity(
+
     val Address: String,
     val FullName: String,
     val UserName: String,
@@ -8,9 +13,11 @@ data class UserEntity(
     val Password: String
 )
 
+@Entity(tableName = "SingleUserEntity")
 data class SingleUserEntity(
-    val FullName: String,
-    val UserName: String,
-    val Address: String,
-    val Password: String
+    @PrimaryKey(autoGenerate = false)
+    @SerializedName("FullName")val FullName: String,
+    @SerializedName("UserName")val UserName: String,
+    @SerializedName("Address")val Address: String,
+    @SerializedName("Password")val Password: String
 )

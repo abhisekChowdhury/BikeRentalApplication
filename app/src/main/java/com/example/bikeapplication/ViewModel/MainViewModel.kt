@@ -9,6 +9,7 @@ import com.example.bikeapplication.Entities.BikeEntity
 import com.example.bikeapplication.Entities.SingleBikeEntity
 import com.example.bikeapplication.Entities.SingleUserEntity
 import com.example.bikeapplication.Entities.UserEntity
+import com.example.bikeapplication.LocalDB.BikeApplicationViewModel
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -17,6 +18,7 @@ class MainViewModel : ViewModel() {
     lateinit var liveDataList: MutableLiveData<List<BikeEntity>?>
     lateinit var liveData: MutableLiveData<BikeEntity?>
     lateinit var liveDataUser: MutableLiveData<UserEntity?>
+    lateinit var liveBikeAppViewModel: BikeApplicationViewModel
 
     init {
         liveDataList = MutableLiveData()
@@ -40,8 +42,6 @@ class MainViewModel : ViewModel() {
                 liveDataList.postValue(response.body())
             }
         })
-
-
     }
 
     fun backendBikeDetails(id:String) {
@@ -93,6 +93,7 @@ class MainViewModel : ViewModel() {
                 call: Call<Any>,
                 response: Response<Any>
             ) {
+                //liveBikeAppViewModel.insertListOfUsers(response.body()!!)
                 //Log.i("response add user ", "aaaaa")
                 //Log.i("Data: ", (response.body() as SingleUserEntity?).toString())
             }
@@ -112,10 +113,10 @@ class MainViewModel : ViewModel() {
                 call: Call<Any>,
                 response: Response<Any>
             ) {
+                //liveBikeAppViewModel.insertListOfBikes(response.body()!!)
                 //Log.i("response add user ", "aaaaa")
                 //Log.i("Data: ", (response.body() as SingleUserEntity?).toString())
             }
         })
     }
-
 }

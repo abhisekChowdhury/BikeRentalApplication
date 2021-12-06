@@ -13,6 +13,9 @@ interface RetroServiceInterface {
     @GET("getallbikes")
     fun getallbikes(): Call<List<BikeEntity>>
 
+    @GET("getallbikes1")
+    fun getallbikes1(): Call<List<SingleBikeEntity>>
+
     @GET("getbikedescription/{id}")
     fun getbikedescription(
         @Path("id") id: String

@@ -10,6 +10,7 @@
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_maps.xml" value="0.19270833333333334" />
         <entry key="app/src/main/res/layout/fragment_registration.xml" value="0.37604166666666666" />
+        <entry key="app/src/main/res/layout/fragment_select_products.xml" value="0.20260416666666667" />
         <entry key="app/src/main/res/layout/fragment_timer.xml" value="0.23125" />
         <entry key="app/src/main/res/layout/fragment_vendor.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/fragment_weather.xml" value="0.37604166666666666" />

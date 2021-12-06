@@ -1,14 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentSelectProducts">
+    tools:context=".AccesoriesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:padding="20dp">
+
+        <TextView
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="25sp"
+            android:text="Ride Details"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editTextHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:padding="10dp"
+            android:hint="Number of hours"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text=" Add Accessories"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:layout_gravity="center"
+            android:id="@+id/checkBoxHelmet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Helmet ($2)" />
+        <CheckBox
+            android:id="@+id/checkBoxLock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lock ($3)" />
+        <CheckBox
+            android:id="@+id/checkBoxBasket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Basket ($2)" />
+        <CheckBox
+            android:id="@+id/checkBoxPhoneStand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Stand ($2)" />
+
+        <TextView
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="Total: $0.0"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/buttonBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text = "Book"/>
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text = "Cancel"/>
+
+    </LinearLayout>
+
+
 
 </FrameLayout>
