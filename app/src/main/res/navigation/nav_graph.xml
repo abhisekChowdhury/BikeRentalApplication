@@ -56,8 +56,11 @@
             android:name="selectedData"
             app:argType="string" />
         <action
-            android:id="@+id/action_displayBikeDetailsFragment_to_fragmentDisplayMap"
-            app:destination="@id/fragmentDisplayMap" />
+            android:id="@+id/action_displayBikeDetailsFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_displayBikeDetailsFragment_to_fragmentSelectProducts"
+            app:destination="@id/fragmentSelectProducts" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -104,17 +107,21 @@
             app:argType="string" />
     </fragment>
     <fragment
-        android:id="@+id/fragmentDisplayMap"
-        android:name="com.example.bikeapplication.FragmentDisplayMap"
-        android:label="fragment_display_map"
-        tools:layout="@layout/fragment_display_map" >
+        android:id="@+id/mapsFragment"
+        android:name="com.example.bikeapplication.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
         <argument
             android:name="bikeLocation"
             app:argType="string" />
     </fragment>
     <fragment
-        android:id="@+id/mapsFragment"
-        android:name="com.example.bikeapplication.MapsFragment"
-        android:label="fragment_maps"
-        tools:layout="@layout/fragment_maps" />
+        android:id="@+id/fragmentSelectProducts"
+        android:name="com.example.bikeapplication.FragmentSelectProducts"
+        android:label="fragment_select_products"
+        tools:layout="@layout/fragment_select_products" >
+        <argument
+            android:name="selectedData"
+            app:argType="string" />
+    </fragment>
 </navigation>

@@ -83,7 +83,12 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_displayBikeDetailsFragment_to_fragmentDisplayMap">
+                            <entry key="action_displayBikeDetailsFragment_to_fragmentSelectProducts">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_displayBikeDetailsFragment_to_mapsFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -93,13 +98,13 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="fragmentDisplayMap">
+                  <entry key="fragmentSelectProducts">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="1474" />
-                            <option name="y" value="48" />
+                            <option name="x" value="1514" />
+                            <option name="y" value="52" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -162,8 +167,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-298" />
-                            <option name="y" value="-36" />
+                            <option name="x" value="1512" />
+                            <option name="y" value="-254" />
                           </Point>
                         </option>
                       </LayoutPositions>
