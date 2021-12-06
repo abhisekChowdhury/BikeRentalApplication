@@ -36,6 +36,8 @@ class LoginFragment : Fragment() {
             findNavController().navigateUp()
         }
 
+
+
         binding.btnUserLogin.setOnClickListener {
 
             val userName = binding.etUserLogin.text.toString()

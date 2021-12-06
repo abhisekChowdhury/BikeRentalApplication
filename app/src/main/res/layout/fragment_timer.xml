@@ -10,6 +10,19 @@
     android:background="@drawable/transition"
     tools:context=".Fragments.TimerFragment">
 
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="124dp"
+        android:layout_height="114dp"
+        android:layout_gravity="right"
+        android:padding="10dp"
+        app:icon="@android:drawable/ic_menu_revert"
+        app:iconSize="80dp"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
     <Chronometer
         android:id="@+id/stopWatch"
         android:layout_width="wrap_content"

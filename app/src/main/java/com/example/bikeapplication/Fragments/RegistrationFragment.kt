@@ -26,8 +26,10 @@ class RegistrationFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
         binding.btnCancel.setOnClickListener {
-            findNavController().navigateUp()
+            findNavController().navigate(R.id.action_registrationFragment_to_loginFragment)
+
         }
+
 
         binding.btnSaveUser.setOnClickListener {
             if (binding.etPassword.text.toString() == binding.etConfirmPassword.text.toString()) {

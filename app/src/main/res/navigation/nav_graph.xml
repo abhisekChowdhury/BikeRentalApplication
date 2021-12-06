@@ -43,6 +43,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_aboutFragment"
             app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/bikeListingFragment"
@@ -55,6 +58,9 @@
         <argument
             android:name="userName"
             app:argType="string" />
+        <action
+            android:id="@+id/action_bikeListingFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
     </fragment>
     <fragment
         android:id="@+id/displayBikeDetailsFragment"
@@ -73,6 +79,9 @@
         <argument
             android:name="userName"
             app:argType="string" />
+        <action
+            android:id="@+id/action_displayBikeDetailsFragment_to_bikeListingFragment"
+            app:destination="@id/bikeListingFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -91,12 +100,19 @@
         <action
             android:id="@+id/action_registrationFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment2"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/weatherFragment"
         android:name="com.example.bikeapplication.Fragments.WeatherFragment"
         android:label="fragment_weather"
-        tools:layout="@layout/fragment_weather" />
+        tools:layout="@layout/fragment_weather" >
+        <action
+            android:id="@+id/action_weatherFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
     <fragment
         android:id="@+id/vendorFragment"
         android:name="com.example.bikeapplication.vendorFragment"
@@ -108,6 +124,9 @@
         <argument
             android:name="userName"
             app:argType="string" />
+        <action
+            android:id="@+id/action_vendorFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
     </fragment>
     <fragment
         android:id="@+id/addBikeFragment"
@@ -117,6 +136,9 @@
         <argument
             android:name="userName"
             app:argType="string" />
+        <action
+            android:id="@+id/action_addBikeFragment_to_vendorFragment"
+            app:destination="@id/vendorFragment" />
     </fragment>
     <fragment
         android:id="@+id/mapsFragment"
@@ -141,6 +163,9 @@
         <action
             android:id="@+id/action_fragmentSelectProducts_to_fragmentPayment"
             app:destination="@id/fragmentPayment" />
+        <action
+            android:id="@+id/action_fragmentSelectProducts_to_displayBikeDetailsFragment"
+            app:destination="@id/displayBikeDetailsFragment" />
     </fragment>
     <fragment
         android:id="@+id/fragmentPayment"
@@ -159,20 +184,35 @@
         <action
             android:id="@+id/action_fragmentPayment_to_dashboardFragment"
             app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_fragmentPayment_to_fragmentSelectProducts"
+            app:destination="@id/fragmentSelectProducts" />
     </fragment>
     <fragment
         android:id="@+id/timerFragment"
         android:name="com.example.bikeapplication.Fragments.TimerFragment"
         android:label="fragment_timer"
-        tools:layout="@layout/fragment_timer" />
+        tools:layout="@layout/fragment_timer" >
+        <action
+            android:id="@+id/action_timerFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.bikeapplication.AboutFragment"
         android:label="fragment_about"
-        tools:layout="@layout/fragment_about" />
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_aboutFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
     <fragment
         android:id="@+id/helpFragment"
         android:name="com.example.bikeapplication.HelpFragment"
         android:label="fragment_help"
-        tools:layout="@layout/fragment_help" />
+        tools:layout="@layout/fragment_help" >
+        <action
+            android:id="@+id/action_helpFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
 </navigation>

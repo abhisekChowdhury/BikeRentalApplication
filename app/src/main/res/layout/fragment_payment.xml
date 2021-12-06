@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.FragmentPayment">
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="124dp"
+        android:layout_height="114dp"
+        android:layout_gravity="right"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        app:icon="@android:drawable/ic_menu_revert"
+        app:iconSize="80dp"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -19,7 +34,8 @@
             android:gravity="center"
             android:padding="10dp"
             android:text="Pay By Card"
-            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textSize="34sp"
             android:textStyle="bold" />
 
         <EditText
@@ -29,7 +45,11 @@
             android:layout_marginTop="20dp"
             android:hint="eg. 0000 0000 0000 0000"
             android:inputType="textPersonName"
-            android:padding="10dp" />
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="34sp" />
 
         <EditText
             android:id="@+id/editTextExpiryDate"
@@ -38,7 +58,11 @@
             android:layout_marginTop="20dp"
             android:hint="eg. 00/00"
             android:inputType="textPersonName"
-            android:padding="10dp" />
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="34sp" />
 
         <EditText
             android:id="@+id/editTextCVV"
@@ -47,7 +71,11 @@
             android:layout_marginTop="20dp"
             android:hint="eg. 000"
             android:inputType="textPersonName"
-            android:padding="10dp" />
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="34sp" />
 
         <TextView
             android:id="@+id/totalTextView"
@@ -57,7 +85,8 @@
             android:gravity="center"
             android:padding="10dp"
             android:text="Total: $0.0"
-            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textSize="34sp"
             android:textStyle="bold" />
 
         <Button
@@ -65,15 +94,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text = "Book"/>
+            android:background="@drawable/cornerbtn"
+            android:text="Book"
+            android:textSize="34sp" />
 
         <Button
             android:id="@+id/buttonCancel"
-            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text = "Cancel"/>
+            android:layout_marginTop="10dp"
+            android:background="@drawable/cornerbtn"
+            android:text="Cancel"
+            android:textSize="34sp" />
 
     </LinearLayout>
 

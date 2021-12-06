@@ -26,9 +26,10 @@ class BikeListAdapter(private val bikeList: List<BikeEntity>,
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val bike = bikeList[position]
         with(holder.binding) {
-            bikeNameTextView.text = bike.BikeType
-            vendorNameTextView.text = bike.Brand
-            costPerHourTextView.text = bike.Price
+            bikeNameTextView.text = "Bike Type: " + bike.BikeType
+            vendorNameTextView.text = "Bike Brand: " + bike.Brand
+            costPerHourTextView.text = "Bike Price: $" + bike.Price
+
             if(bike.Brand.equals("GIANT",ignoreCase = true)){
                 bikeListImageView.setImageResource(R.drawable.bike1)
             }

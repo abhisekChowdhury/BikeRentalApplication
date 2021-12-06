@@ -47,6 +47,15 @@ class DashboardFragment : Fragment() {
             findNavController().navigate(R.id.action_dashboardFragment_to_timerFragment)
         }
 
+        binding.btnLogout.setOnClickListener {
+            findNavController().navigate(R.id.action_dashboardFragment_to_loginFragment)
+            }
+
+        binding.cancelButton.setOnClickListener {
+            findNavController().navigate(R.id.action_dashboardFragment_to_loginFragment)
+        }
+
+
 
         viewModel.backendgetusernamepassword(args.userName)
         viewModel.liveDataUser.observe(viewLifecycleOwner, Observer {

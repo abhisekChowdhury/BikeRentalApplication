@@ -17,6 +17,15 @@
                             <option name="y" value="-349" />
                           </Point>
                         </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_aboutFragment_to_dashboardFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
                       </LayoutPositions>
                     </value>
                   </entry>
@@ -25,9 +34,18 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="1237" />
-                            <option name="y" value="377" />
+                            <option name="x" value="1350" />
+                            <option name="y" value="382" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_addBikeFragment_to_vendorFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -43,6 +61,11 @@
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_bikeListingFragment_to_dashboardFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_bikeListingFragment_to_displayBikeDetailsFragment">
                               <value>
                                 <LayoutPositions />
@@ -64,7 +87,22 @@
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_dashboardFragment_to_aboutFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_dashboardFragment_to_bikeListingFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_dashboardFragment_to_helpFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_dashboardFragment_to_loginFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -94,12 +132,17 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="1233" />
-                            <option name="y" value="54" />
+                            <option name="x" value="1259" />
+                            <option name="y" value="-64" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_displayBikeDetailsFragment_to_bikeListingFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_displayBikeDetailsFragment_to_fragmentSelectProducts">
                               <value>
                                 <LayoutPositions />
@@ -131,6 +174,11 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_fragmentPayment_to_fragmentSelectProducts">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                           </map>
                         </option>
                       </LayoutPositions>
@@ -141,12 +189,17 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="1514" />
-                            <option name="y" value="52" />
+                            <option name="x" value="1422" />
+                            <option name="y" value="163" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_fragmentSelectProducts_to_displayBikeDetailsFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_fragmentSelectProducts_to_fragmentPayment">
                               <value>
                                 <LayoutPositions />
@@ -166,6 +219,15 @@
                             <option name="y" value="-359" />
                           </Point>
                         </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_helpFragment_to_dashboardFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
                       </LayoutPositions>
                     </value>
                   </entry>
@@ -180,17 +242,7 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_loginFragment_to_aboutFragment">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
                             <entry key="action_loginFragment_to_dashboardFragment">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_loginFragment_to_helpFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -276,8 +328,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="1007" />
-                            <option name="y" value="377" />
+                            <option name="x" value="1041" />
+                            <option name="y" value="387" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -300,6 +352,15 @@
                             <option name="x" value="1003" />
                             <option name="y" value="-257" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_weatherFragment_to_dashboardFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>

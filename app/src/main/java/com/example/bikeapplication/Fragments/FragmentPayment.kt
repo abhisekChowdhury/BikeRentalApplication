@@ -13,6 +13,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.bikeapplication.Entities.SingleBookingHistoryEntity
 import com.example.bikeapplication.Entities.SingleUserEntity
+import com.example.bikeapplication.R
 import com.example.bikeapplication.ViewModel.MainViewModel
 import com.example.bikeapplication.databinding.FragmentPaymentBinding
 
@@ -43,6 +44,13 @@ class FragmentPayment : Fragment() {
         AmountPaid = args.totalAmount
         binding.totalTextView.setText("$"+AmountPaid)
 
+        binding.cancelButton.setOnClickListener {
+            findNavController().navigate(R.id.action_fragmentPayment_to_fragmentSelectProducts)
+        }
+
+        binding.buttonCancel.setOnClickListener {
+            findNavController().navigate(R.id.action_fragmentPayment_to_fragmentSelectProducts)
+        }
 
         viewModel.liveData.observe(viewLifecycleOwner, Observer {
             if(it != null) {

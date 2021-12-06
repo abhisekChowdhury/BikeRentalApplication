@@ -31,6 +31,10 @@ class vendorFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         binding = FragmentVendorBinding.inflate(inflater,container,false)
 
+        binding.cancelButton.setOnClickListener {
+            findNavController().navigate(R.id.action_vendorFragment_to_dashboardFragment)
+        }
+
 
         binding.addBikeButton.setOnClickListener {
             val action = vendorFragmentDirections.actionVendorFragmentToAddBikeFragment(args.userName)

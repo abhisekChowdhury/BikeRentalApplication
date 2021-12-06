@@ -6,6 +6,7 @@
     <string name="about">Bello is a bike rental app that would both include individual renters and stores. Through the app, the user can compare different vendors based on the price, bike model, bike type, duration. By doing this we are hoping to help everyone get a chance to rent the bike they like at affordable prices.
     The second perk of the app is for those individuals that are looking for an extra income. The app will act as a facilitator/trustee for both parties providing a streamlined process for bike rentals, navigating the city with suggested routes, paying for the service, and returning the bike.
     </string>
+    <string name="a_convenient_place_to_rent_your_choice_of_bike_at_one_place">A convenient place to rent your choice of bike at one place</string>
 
 
     <string-array name="bike_location">

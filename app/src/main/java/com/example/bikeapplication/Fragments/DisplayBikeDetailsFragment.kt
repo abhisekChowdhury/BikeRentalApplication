@@ -81,6 +81,10 @@ class DisplayBikeDetailsFragment : Fragment() {
                     findNavController().navigate(action)
                 }
 
+                binding.cancelButton.setOnClickListener {
+                    findNavController().navigate(R.id.action_displayBikeDetailsFragment_to_bikeListingFragment)
+                }
+
 
             }
 

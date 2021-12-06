@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import com.example.bikeapplication.R
 import com.example.bikeapplication.ViewModel.MainViewModel
 import com.example.bikeapplication.databinding.FragmentWeatherBinding
 import org.json.JSONObject
@@ -33,7 +34,7 @@ class WeatherFragment : Fragment() {
         weatherTask().execute()
 
         binding.btnBack.setOnClickListener {
-            findNavController().navigateUp()
+            findNavController().navigate(R.id.action_weatherFragment_to_dashboardFragment)
         }
 
         return binding.root

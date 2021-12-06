@@ -11,6 +11,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.example.bikeapplication.R
 import com.example.bikeapplication.ViewModel.MainViewModel
 import com.example.bikeapplication.databinding.FragmentSelectProductsBinding
 import kotlinx.android.synthetic.main.fragment_select_products.*
@@ -33,6 +34,15 @@ class FragmentSelectProducts : Fragment() {
         binding = FragmentSelectProductsBinding.inflate(inflater,container,false)
 
         viewModel.backendBikeDetails(args.selectedData)
+
+        binding.cancelButton.setOnClickListener {
+            findNavController().navigate(R.id.action_fragmentSelectProducts_to_displayBikeDetailsFragment)
+        }
+
+        binding.buttonCancel.setOnClickListener {
+            findNavController().navigate(R.id.action_fragmentSelectProducts_to_displayBikeDetailsFragment)
+        }
+
         viewModel.liveData.observe(viewLifecycleOwner, Observer {
             if(it != null) {
 

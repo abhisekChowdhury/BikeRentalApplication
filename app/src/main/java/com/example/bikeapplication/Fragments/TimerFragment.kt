@@ -8,6 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.example.bikeapplication.R
 import com.example.bikeapplication.ViewModel.MainViewModel
 import com.example.bikeapplication.databinding.FragmentTimerBinding
 
@@ -51,6 +53,10 @@ class TimerFragment : Fragment() {
             binding.btnReset.isEnabled = false
             binding.btnStart.visibility = View.VISIBLE
             binding.btnStart.isEnabled = true
+        }
+
+        binding.cancelButton.setOnClickListener {
+            findNavController().navigate(R.id.action_timerFragment_to_dashboardFragment)
         }
 
         binding.btnPause.setOnClickListener {

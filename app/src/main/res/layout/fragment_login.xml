@@ -5,21 +5,20 @@
     android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f6d5b0"
+    android:background="@drawable/gradient_bg"
     tools:context=".Fragments.LoginFragment">
 
     <ImageView
         android:id="@+id/logoImage"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="252dp"
+        android:layout_height="262dp"
         android:layout_margin="5dp"
         android:layout_marginStart="140dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/bello_logos_white"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/bello_logos_black"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etUserLogin"
@@ -30,6 +29,8 @@
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -46,6 +47,8 @@
         android:importantForAutofill="no"
         android:inputType="textPassword"
         android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -60,9 +63,10 @@
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/cornerbtn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.538" />
+        app:layout_constraintVertical_bias="0.588" />
 
     <Button
         android:id="@+id/btnCancelLogin"
@@ -71,9 +75,9 @@
         android:text="Cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/cornerbtn"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.654" />
+        app:layout_constraintVertical_bias="0.68" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,12 +13,18 @@
         <entry key="..\:/Users/Jasmeet/Documents/Courses/AdvWebMobile/Project/BikeRentalApplication/app/src/main/res/layout/fragment_add_bike.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Jasmeet/Documents/Courses/AdvWebMobile/Project/BikeRentalApplication/app/src/main/res/layout/fragment_bike_listing.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Jasmeet/Documents/Courses/AdvWebMobile/Project/BikeRentalApplication/app/src/main/res/layout/fragment_dashboard.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Jasmeet/Documents/Courses/AdvWebMobile/Project/BikeRentalApplication/app/src/main/res/layout/fragment_display_bike_details.xml" value="0.176" />
-        <entry key="..\:/Users/Jasmeet/Documents/Courses/AdvWebMobile/Project/BikeRentalApplication/app/src/main/res/layout/fragment_help.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Jasmeet/Documents/Courses/AdvWebMobile/Project/BikeRentalApplication/app/src/main/res/layout/fragment_login.xml" value="0.6" />
+        <entry key="..\:/Users/Jasmeet/Documents/Courses/AdvWebMobile/Project/BikeRentalApplication/app/src/main/res/layout/fragment_display_bike_details.xml" value="0.10400000000000001" />
+        <entry key="..\:/Users/Jasmeet/Documents/Courses/AdvWebMobile/Project/BikeRentalApplication/app/src/main/res/layout/fragment_help.xml" value="0.152" />
+        <entry key="..\:/Users/Jasmeet/Documents/Courses/AdvWebMobile/Project/BikeRentalApplication/app/src/main/res/layout/fragment_login.xml" value="0.264" />
+        <entry key="..\:/Users/Jasmeet/Documents/Courses/AdvWebMobile/Project/BikeRentalApplication/app/src/main/res/layout/fragment_maps.xml" value="0.190625" />
+        <entry key="..\:/Users/Jasmeet/Documents/Courses/AdvWebMobile/Project/BikeRentalApplication/app/src/main/res/layout/fragment_payment.xml" value="0.190625" />
+        <entry key="..\:/Users/Jasmeet/Documents/Courses/AdvWebMobile/Project/BikeRentalApplication/app/src/main/res/layout/fragment_registration.xml" value="0.190625" />
+        <entry key="..\:/Users/Jasmeet/Documents/Courses/AdvWebMobile/Project/BikeRentalApplication/app/src/main/res/layout/fragment_select_products.xml" value="0.190625" />
         <entry key="..\:/Users/Jasmeet/Documents/Courses/AdvWebMobile/Project/BikeRentalApplication/app/src/main/res/layout/fragment_timer.xml" value="0.2" />
+        <entry key="..\:/Users/Jasmeet/Documents/Courses/AdvWebMobile/Project/BikeRentalApplication/app/src/main/res/layout/fragment_vendor.xml" value="0.190625" />
         <entry key="..\:/Users/Jasmeet/Documents/Courses/AdvWebMobile/Project/BikeRentalApplication/app/src/main/res/layout/fragment_weather.xml" value="0.264" />
         <entry key="..\:/Users/Jasmeet/Documents/Courses/AdvWebMobile/Project/BikeRentalApplication/app/src/main/res/layout/list_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Jasmeet/Documents/Courses/AdvWebMobile/Project/BikeRentalApplication/app/src/main/res/layout/main_fragment.xml" value="0.264" />
         <entry key="..\:/Users/Jasmeet/Documents/Courses/AdvWebMobile/Project/BikeRentalApplication/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />
         <entry key="app/src/main/res/layout/fragment_add_bike.xml" value="0.23541666666666666" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.4036458333333333" />

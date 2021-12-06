@@ -1,37 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
     tools:context=".HelpFragment">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="124dp"
+        android:layout_height="114dp"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        app:icon="@android:drawable/ic_menu_revert"
+        app:iconSize="80dp"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="321dp"
+        android:layout_height="318dp"
+        android:layout_marginTop="96dp"
+        android:src="@drawable/bello_logos_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="20dp">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Help"
+        android:textColor="#FFFDFD"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-        <ImageView
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:src="@drawable/bello_logos_black"/>
+    <TextView
+        android:layout_width="1280dp"
+        android:layout_height="145dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/help"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.243" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:text="Help"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:text="@string/help"
-            android:textSize="20sp"
-            android:layout_marginTop="10dp"/>
-
-    </LinearLayout>
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,7 @@ import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.bikeapplication.Adapters.BikeListAdapter
+import com.example.bikeapplication.R
 import com.example.bikeapplication.ViewModel.MainViewModel
 import com.example.bikeapplication.databinding.FragmentBikeListingBinding
 
@@ -52,6 +53,10 @@ class BikeListingFragment : Fragment(), BikeListAdapter.ListItemListener {
 
 
         })
+
+        binding.cancelButton.setOnClickListener {
+            findNavController().navigate(R.id.action_bikeListingFragment_to_dashboardFragment)
+        }
 
         return binding.root
 

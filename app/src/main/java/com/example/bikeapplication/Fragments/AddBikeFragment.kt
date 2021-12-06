@@ -43,6 +43,10 @@ class addBikeFragment : Fragment() {
                 else -> radioButtonText = "Unknown"
             }
 
+            binding.cancelButton.setOnClickListener {
+                findNavController().navigate(R.id.action_vendorFragment_to_dashboardFragment)
+            }
+
             val Description = binding.editTextDescription.text.toString()
             val Price = binding.editTextPrice.text.toString().toString()
             val Location = binding.spinnerLocation.selectedItem.toString()
