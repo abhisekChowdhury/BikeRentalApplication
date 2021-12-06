@@ -20,6 +20,7 @@ class DisplayBikeDetailsFragment : Fragment() {
     private val args : DisplayBikeDetailsFragmentArgs by navArgs()
     private lateinit var binding: FragmentDisplayBikeDetailsBinding
     private lateinit var viewModel: MainViewModel
+    private var pickupLocation:String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -66,6 +67,14 @@ class DisplayBikeDetailsFragment : Fragment() {
 //                binding.ratingTextView.setText("Rating:" + it.UserRating)
 //                binding.commentsTextView.setText("User Comments: " + it.UserComments)
 
+                pickupLocation = it.PickupLocation
+
+
+
+                binding.checkMapButton.setOnClickListener {
+                    val action = DisplayBikeDetailsFragmentDirections.actionDisplayBikeDetailsFragmentToMapsFragment(pickupLocation)
+                    findNavController().navigate(action)
+                }
 
                 binding.bookBikeButton.setOnClickListener {
                     val action = DisplayBikeDetailsFragmentDirections.actionDisplayBikeDetailsFragmentToFragmentSelectProducts(args.selectedData, args.userName)

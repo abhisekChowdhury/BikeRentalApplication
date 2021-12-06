@@ -111,7 +111,7 @@
     </fragment>
     <fragment
         android:id="@+id/mapsFragment"
-        android:name="com.example.bikeapplication.MapsFragment"
+        android:name="com.example.bikeapplication.Fragments.MapsFragment"
         android:label="fragment_maps"
         tools:layout="@layout/fragment_maps" >
         <argument
