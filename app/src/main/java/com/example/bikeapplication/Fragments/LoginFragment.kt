@@ -101,17 +101,4 @@ class LoginFragment : Fragment() {
             Toast.makeText(context, "Please enter valid username and password.", Toast.LENGTH_SHORT).show()
         }
     }
-
-//    private fun checkUser() {
-//        val login = binding.etUserLogin.text.toString()
-//        val password = binding.etUserPassword.text.toString()
-//
-//      //  viewModel.getUserAccount(login, password)
-//
-//
-//
-//     //   if(viewModel.userAccount != null){
-//            findNavController().navigate(R.id.action_loginFragment_to_dashboardFragment)
-//        }
-//    }
 }

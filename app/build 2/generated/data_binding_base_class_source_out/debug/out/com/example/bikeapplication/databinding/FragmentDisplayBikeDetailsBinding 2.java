@@ -130,7 +130,7 @@ public final class FragmentDisplayBikeDetailsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.commentsTextView;
+      id = R.id.pickupLocationTextView;
       TextView commentsTextView = ViewBindings.findChildViewById(rootView, id);
       if (commentsTextView == null) {
         break missingId;
@@ -142,7 +142,7 @@ public final class FragmentDisplayBikeDetailsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.ratingTextView;
+      id = R.id.vendorTextView;
       TextView ratingTextView = ViewBindings.findChildViewById(rootView, id);
       if (ratingTextView == null) {
         break missingId;

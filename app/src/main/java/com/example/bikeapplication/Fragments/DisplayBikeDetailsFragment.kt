@@ -59,13 +59,12 @@ class DisplayBikeDetailsFragment : Fragment() {
                     }
                 }
 
-                binding.bikeTitleTextView.setText(it.Brand.toString() + it.BikeType.toString())
+                binding.bikeTitleTextView.setText(it.Brand.toString() +" " +it.BikeType.toString())
                 Log.i("bike",it.Brand)
-                //binding.bikeImage.setImageResource(R.drawable.common_full_open_on_phone)
                 binding.bikePriceTextView.setText("$"+it.Price)
                 binding.descriptionTextView.setText("Description: " + it.Description)
-//                binding.ratingTextView.setText("Rating:" + it.UserRating)
-//                binding.commentsTextView.setText("User Comments: " + it.UserComments)
+                binding.pickupLocationTextView.setText("Pickup Location: "+it.PickupLocation)
+                binding.vendorTextView.setText("Vendor Name: " + it.VendorName)
 
                 pickupLocation = it.PickupLocation
 
@@ -82,7 +81,7 @@ class DisplayBikeDetailsFragment : Fragment() {
                 }
 
                 binding.cancelButton.setOnClickListener {
-                    findNavController().navigate(R.id.action_displayBikeDetailsFragment_to_bikeListingFragment)
+                    findNavController().navigateUp()
                 }
 
 

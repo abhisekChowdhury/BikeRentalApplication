@@ -44,7 +44,7 @@ class addBikeFragment : Fragment() {
             }
 
             binding.cancelButton.setOnClickListener {
-                findNavController().navigate(R.id.action_vendorFragment_to_dashboardFragment)
+                findNavController().navigateUp()
             }
 
             val Description = binding.editTextDescription.text.toString()

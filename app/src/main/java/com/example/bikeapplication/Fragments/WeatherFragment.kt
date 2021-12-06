@@ -34,7 +34,7 @@ class WeatherFragment : Fragment() {
         weatherTask().execute()
 
         binding.btnBack.setOnClickListener {
-            findNavController().navigate(R.id.action_weatherFragment_to_dashboardFragment)
+            findNavController().navigateUp()
         }
 
         return binding.root

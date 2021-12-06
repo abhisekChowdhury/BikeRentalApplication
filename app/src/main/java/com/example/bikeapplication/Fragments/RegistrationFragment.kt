@@ -26,7 +26,7 @@ class RegistrationFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
         binding.btnCancel.setOnClickListener {
-            findNavController().navigate(R.id.action_registrationFragment_to_loginFragment)
+            findNavController().navigateUp()
 
         }
 
@@ -52,20 +52,4 @@ class RegistrationFragment : Fragment() {
         return binding.root
     }
 
-//
-//    private fun saveUser() {
-//        val fName = binding.etFirstName.text.toString().trim()
-//        val lName = binding.etLastName.text.toString().trim()
-//        val login = binding.etLogin.text.toString().trim()
-//        val password = binding.etPassword.text.toString().trim()
-//        val confirmPassword = binding.etConfirmPassword.text.toString().trim()
-//
-//        if(password.equals(confirmPassword)){
-//           // viewModel.addUserAccount(Users(0, fName,lName,login,password,""))
-//            Toast.makeText(requireActivity(), "User Saved", Toast.LENGTH_SHORT).show()
-//            findNavController().navigate(R.id.action_registrationFragment_to_loginFragment)
-//        }else{
-//            Toast.makeText(requireActivity(), "Passwords does not match", Toast.LENGTH_SHORT).show()
-//        }
-//    }
 }

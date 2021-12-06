@@ -52,7 +52,7 @@ class DashboardFragment : Fragment() {
             }
 
         binding.cancelButton.setOnClickListener {
-            findNavController().navigate(R.id.action_dashboardFragment_to_loginFragment)
+            findNavController().navigateUp()
         }
 
 

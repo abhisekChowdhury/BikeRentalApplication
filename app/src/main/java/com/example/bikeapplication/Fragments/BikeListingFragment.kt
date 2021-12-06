@@ -55,7 +55,7 @@ class BikeListingFragment : Fragment(), BikeListAdapter.ListItemListener {
         })
 
         binding.cancelButton.setOnClickListener {
-            findNavController().navigate(R.id.action_bikeListingFragment_to_dashboardFragment)
+            findNavController().navigateUp()
         }
 
         return binding.root

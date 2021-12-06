@@ -32,7 +32,7 @@ class vendorFragment : Fragment() {
         binding = FragmentVendorBinding.inflate(inflater,container,false)
 
         binding.cancelButton.setOnClickListener {
-            findNavController().navigate(R.id.action_vendorFragment_to_dashboardFragment)
+            findNavController().navigateUp()
         }
 
 

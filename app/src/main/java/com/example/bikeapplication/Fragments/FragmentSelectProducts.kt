@@ -36,11 +36,11 @@ class FragmentSelectProducts : Fragment() {
         viewModel.backendBikeDetails(args.selectedData)
 
         binding.cancelButton.setOnClickListener {
-            findNavController().navigate(R.id.action_fragmentSelectProducts_to_displayBikeDetailsFragment)
+            findNavController().navigateUp()
         }
 
         binding.buttonCancel.setOnClickListener {
-            findNavController().navigate(R.id.action_fragmentSelectProducts_to_displayBikeDetailsFragment)
+            findNavController().navigateUp()
         }
 
         viewModel.liveData.observe(viewLifecycleOwner, Observer {

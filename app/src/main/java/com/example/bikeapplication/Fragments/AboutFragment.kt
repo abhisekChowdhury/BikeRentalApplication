@@ -24,7 +24,7 @@ class AboutFragment : Fragment() {
         binding = FragmentAboutBinding.inflate(inflater,container,false)
 
         binding.cancelButton.setOnClickListener {
-            findNavController().navigate(R.id.action_aboutFragment_to_dashboardFragment)
+            findNavController().navigateUp()
         }
 
         return binding.root

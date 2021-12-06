@@ -56,7 +56,7 @@ class TimerFragment : Fragment() {
         }
 
         binding.cancelButton.setOnClickListener {
-            findNavController().navigate(R.id.action_timerFragment_to_dashboardFragment)
+            findNavController().navigateUp()
         }
 
         binding.btnPause.setOnClickListener {

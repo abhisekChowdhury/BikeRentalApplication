@@ -199,7 +199,7 @@
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.example.bikeapplication.AboutFragment"
+        android:name="com.example.bikeapplication.Fragments.AboutFragment"
         android:label="fragment_about"
         tools:layout="@layout/fragment_about" >
         <action
@@ -208,7 +208,7 @@
     </fragment>
     <fragment
         android:id="@+id/helpFragment"
-        android:name="com.example.bikeapplication.HelpFragment"
+        android:name="com.example.bikeapplication.Fragments.HelpFragment"
         android:label="fragment_help"
         tools:layout="@layout/fragment_help" >
         <action

@@ -48,8 +48,8 @@ class FragmentPayment : Fragment() {
             findNavController().navigate(R.id.action_fragmentPayment_to_fragmentSelectProducts)
         }
 
-        binding.buttonCancel.setOnClickListener {
-            findNavController().navigate(R.id.action_fragmentPayment_to_fragmentSelectProducts)
+        binding.cancelButton.setOnClickListener {
+            findNavController().navigateUp()
         }
 
         viewModel.liveData.observe(viewLifecycleOwner, Observer {

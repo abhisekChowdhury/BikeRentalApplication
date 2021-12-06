@@ -78,7 +78,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.489"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/commentsTextView"
+            app:layout_constraintTop_toBottomOf="@+id/pickupLocationTextView"
             tools:ignore="TextContrastCheck" />
 
         <Button
@@ -113,7 +113,7 @@
             app:layout_constraintTop_toBottomOf="@+id/bikePriceTextView" />
 
         <TextView
-            android:id="@+id/ratingTextView"
+            android:id="@+id/vendorTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
@@ -125,7 +125,7 @@
             app:layout_constraintTop_toBottomOf="@+id/descriptionTextView" />
 
         <TextView
-            android:id="@+id/commentsTextView"
+            android:id="@+id/pickupLocationTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
@@ -133,7 +133,7 @@
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ratingTextView" />
+            app:layout_constraintTop_toBottomOf="@+id/vendorTextView" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
