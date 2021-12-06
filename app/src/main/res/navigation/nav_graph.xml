@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_mainFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
     </fragment>
     <fragment
         android:id="@+id/dashboardFragment"
@@ -52,6 +55,9 @@
         <argument
             android:name="selectedData"
             app:argType="string" />
+        <action
+            android:id="@+id/action_displayBikeDetailsFragment_to_fragmentDisplayMap"
+            app:destination="@id/fragmentDisplayMap" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -84,10 +90,31 @@
         <action
             android:id="@+id/action_vendorFragment_to_addBikeFragment"
             app:destination="@id/addBikeFragment" />
+        <argument
+            android:name="userName"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/addBikeFragment"
-        android:name="com.example.bikeapplication.addBikeFragment"
+        android:name="com.example.bikeapplication.Fragments.addBikeFragment"
         android:label="fragment_add_bike"
-        tools:layout="@layout/fragment_add_bike" />
+        tools:layout="@layout/fragment_add_bike" >
+        <argument
+            android:name="userName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDisplayMap"
+        android:name="com.example.bikeapplication.FragmentDisplayMap"
+        android:label="fragment_display_map"
+        tools:layout="@layout/fragment_display_map" >
+        <argument
+            android:name="bikeLocation"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.bikeapplication.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 </navigation>

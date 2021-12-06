@@ -7,10 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
+import com.example.bikeapplication.Fragments.DashboardFragmentArgs
+import com.example.bikeapplication.Fragments.DashboardFragmentDirections
 import com.example.bikeapplication.ViewModel.MainViewModel
 import com.example.bikeapplication.databinding.FragmentVendorBinding
 
 class vendorFragment : Fragment() {
+    private val args : DashboardFragmentArgs by navArgs()
     private lateinit var binding: FragmentVendorBinding
     private lateinit var viewModel: MainViewModel
 
@@ -29,7 +33,8 @@ class vendorFragment : Fragment() {
 
 
         binding.addBikeButton.setOnClickListener {
-            findNavController().navigate(R.id.action_vendorFragment_to_addBikeFragment)
+            val action = vendorFragmentDirections.actionVendorFragmentToAddBikeFragment(args.userName)
+            findNavController().navigate(action)
         }
 
         return binding.root

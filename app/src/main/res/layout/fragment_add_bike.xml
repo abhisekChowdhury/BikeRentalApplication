@@ -1,65 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".addBikeFragment">
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Fragments.addBikeFragment">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
+        android:id="@+id/editTextTextBrandName"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="66dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:hint="Brand Name"/>
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="wrap_content"
+        android:id="@+id/editTextTextBikeType"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="31dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:hint="Bike Type"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="User Type:"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/userTypeRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/kidsRadioButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Kids" />
+
+            <RadioButton
+                android:id="@+id/adultsRadioButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Adults" />
+
+        </RadioGroup>
+    </LinearLayout>
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="wrap_content"
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="31dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:hint="Bike Description"/>
+
+
+    <Spinner
+        android:id="@+id/spinnerLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/bike_location"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
-        android:layout_width="wrap_content"
+        android:id="@+id/editTextPrice"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="32dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:hint="Bike Price per hour (CAD)"/>
 
-    <EditText
-        android:id="@+id/editTextTextPersonName5"
+    <Button
+        android:id="@+id/addBikeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:padding="10dp"
+        android:text="Add Bike" />
+
+
+
+</LinearLayout>

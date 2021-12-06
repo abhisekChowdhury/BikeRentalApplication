@@ -15,7 +15,8 @@
             android:id="@+id/bikeImage"
             android:layout_gravity="center"
             android:layout_width="200dp"
-            android:layout_height="200dp"/>
+            android:layout_height="200dp"
+            android:src="@drawable/bello_logos_white"/>
         <TextView
             android:id="@+id/bikeTitleTextView"
             android:layout_width="wrap_content"
@@ -56,6 +57,13 @@
 
         </ScrollView>
 
+        <Button
+            android:text="Check Map"
+            android:layout_gravity="center"
+            android:id="@+id/checkMapButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
         <Button
             android:text="Book"
             android:layout_gravity="center"

@@ -12,6 +12,8 @@ import androidx.navigation.fragment.navArgs
 import com.example.bikeapplication.ViewModel.MainViewModel
 import com.example.bikeapplication.R
 import com.example.bikeapplication.databinding.FragmentDisplayBikeDetailsBinding
+import kotlinx.android.synthetic.main.fragment_display_bike_details.*
+import kotlinx.android.synthetic.main.list_item.*
 
 class DisplayBikeDetailsFragment : Fragment() {
     private val args : DisplayBikeDetailsFragmentArgs by navArgs()
@@ -32,13 +34,36 @@ class DisplayBikeDetailsFragment : Fragment() {
         viewModel.backendBikeDetails(args.selectedData)
         viewModel.liveData.observe(viewLifecycleOwner, Observer {
             if(it != null) {
+
+                when {
+                    it.Brand.equals("GIANT",ignoreCase = true) -> {
+                        binding.bikeImage.setImageResource(R.drawable.bike1)
+                        Log.i("Giant", "If works!")
+                    }
+                    it.Brand.equals("LIV",ignoreCase = true) -> {
+                        binding.bikeImage.setImageResource(R.drawable.bike2)
+                    }
+                    it.Brand.equals("HERO",ignoreCase = true) -> {
+                        binding.bikeImage.setImageResource(R.drawable.bike3)
+                    }
+                    it.Brand.equals("HERCULES",ignoreCase = true) -> {
+                        binding.bikeImage.setImageResource(R.drawable.bike4)
+                    }
+                    it.Brand.equals("TREK",ignoreCase = true) -> {
+                        binding.bikeImage.setImageResource(R.drawable.bike5)
+                    }
+                    else -> {
+                        binding.bikeImage.setImageResource(R.drawable.bello_logos_transparent)
+                    }
+                }
+
                 binding.bikeTitleTextView.setText(it.Brand.toString() + it.BikeType.toString())
                 Log.i("bike",it.Brand)
-                binding.bikeImage.setImageResource(R.drawable.common_full_open_on_phone)
-                binding.bikePriceTextView.setText(it.Price)
+                //binding.bikeImage.setImageResource(R.drawable.common_full_open_on_phone)
+                binding.bikePriceTextView.setText("$"+it.Price)
                 binding.descriptionTextView.setText("Description: " + it.Description)
-                binding.ratingTextView.setText("Rating:" + it.UserRating)
-                binding.commentsTextView.setText("User Comments: " + it.UserComments)
+//                binding.ratingTextView.setText("Rating:" + it.UserRating)
+//                binding.commentsTextView.setText("User Comments: " + it.UserComments)
             }
 
             else {

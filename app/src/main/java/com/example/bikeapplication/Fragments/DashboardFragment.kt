@@ -36,7 +36,9 @@ class DashboardFragment : Fragment() {
         }
 
         binding.vendorButton.setOnClickListener {
-            findNavController().navigate(R.id.action_dashboardFragment_to_vendorFragment)
+            val action = DashboardFragmentDirections.actionDashboardFragmentToVendorFragment(args.userName)
+            findNavController().navigate(action)
+            //findNavController().navigate(R.id.action_dashboardFragment_to_vendorFragment)
         }
 
         binding.bikerButton.setOnClickListener {

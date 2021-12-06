@@ -2,4 +2,14 @@
     <string name="app_name">BikeApplication</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="bike_location">
+        <item>Bike Location</item>
+        <item>Stanley Park</item>
+        <item>Kitsilano Beach</item>
+        <item>Metrotown</item>
+        <item>Airport</item>
+        <item>Main Street Science World</item>
+        <item>Queen Elizabeth Park</item>
+    </string-array>
 </resources>

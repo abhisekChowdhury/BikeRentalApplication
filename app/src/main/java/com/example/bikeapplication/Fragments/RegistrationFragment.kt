@@ -29,8 +29,6 @@ class RegistrationFragment : Fragment() {
             findNavController().navigateUp()
         }
 
-        //TO IMPLEMENT - CONDITION: CHECK IF USERNAME EXISTS IN MONGO DB
-        //
         binding.btnSaveUser.setOnClickListener {
             if (binding.etPassword.text.toString() == binding.etConfirmPassword.text.toString()) {
                 val fullName = binding.etName.text.toString()

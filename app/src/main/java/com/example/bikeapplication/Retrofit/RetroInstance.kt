@@ -7,7 +7,7 @@ class RetroInstance {
 
 
     companion object {
-        val BASE_URL = "http://100.24.119.35:5000/"
+        val BASE_URL = "http://18.208.204.88:5000/"
 
         fun getRetroInstance(): Retrofit {
             return Retrofit.Builder()
