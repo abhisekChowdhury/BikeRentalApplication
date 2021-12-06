@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.bikeapplication.ViewModel.MainViewModel
 import com.example.bikeapplication.R
@@ -64,12 +65,19 @@ class DisplayBikeDetailsFragment : Fragment() {
                 binding.descriptionTextView.setText("Description: " + it.Description)
 //                binding.ratingTextView.setText("Rating:" + it.UserRating)
 //                binding.commentsTextView.setText("User Comments: " + it.UserComments)
+
+
+                binding.bookBikeButton.setOnClickListener {
+                    val action = DisplayBikeDetailsFragmentDirections.actionDisplayBikeDetailsFragmentToFragmentSelectProducts(args.selectedData, args.userName)
+                    findNavController().navigate(action)
+                }
+
+
             }
 
             else {
                 Log.i("error","no data found")
             }
-
 
         })
 

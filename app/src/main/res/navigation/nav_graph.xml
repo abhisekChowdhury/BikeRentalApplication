@@ -16,9 +16,6 @@
         <action
             android:id="@+id/action_mainFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
-        <action
-            android:id="@+id/action_mainFragment_to_mapsFragment"
-            app:destination="@id/mapsFragment" />
     </fragment>
     <fragment
         android:id="@+id/dashboardFragment"
@@ -46,6 +43,9 @@
         <action
             android:id="@+id/action_bikeListingFragment_to_displayBikeDetailsFragment"
             app:destination="@id/displayBikeDetailsFragment" />
+        <argument
+            android:name="userName"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/displayBikeDetailsFragment"
@@ -61,6 +61,9 @@
         <action
             android:id="@+id/action_displayBikeDetailsFragment_to_fragmentSelectProducts"
             app:destination="@id/fragmentSelectProducts" />
+        <argument
+            android:name="userName"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -117,11 +120,35 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentSelectProducts"
-        android:name="com.example.bikeapplication.FragmentSelectProducts"
+        android:name="com.example.bikeapplication.Fragments.FragmentSelectProducts"
         android:label="fragment_select_products"
         tools:layout="@layout/fragment_select_products" >
         <argument
             android:name="selectedData"
             app:argType="string" />
+        <argument
+            android:name="userName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_fragmentSelectProducts_to_fragmentPayment"
+            app:destination="@id/fragmentPayment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPayment"
+        android:name="com.example.bikeapplication.Fragments.FragmentPayment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" >
+        <argument
+            android:name="selectedData"
+            app:argType="string" />
+        <argument
+            android:name="userName"
+            app:argType="string" />
+        <argument
+            android:name="totalAmount"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_fragmentPayment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
     </fragment>
 </navigation>

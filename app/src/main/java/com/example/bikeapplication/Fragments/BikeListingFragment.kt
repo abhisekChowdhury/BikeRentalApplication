@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.bikeapplication.Adapters.BikeListAdapter
@@ -17,7 +18,7 @@ import com.example.bikeapplication.databinding.FragmentBikeListingBinding
 
 
 class BikeListingFragment : Fragment(), BikeListAdapter.ListItemListener {
-
+    private val args : DashboardFragmentArgs by navArgs()
     private lateinit var binding: FragmentBikeListingBinding
     private lateinit var viewModel: MainViewModel
     private lateinit var adapter: BikeListAdapter
@@ -59,7 +60,7 @@ class BikeListingFragment : Fragment(), BikeListAdapter.ListItemListener {
 
     override fun onItemClick(bikeId: String) {
 
-        val action = BikeListingFragmentDirections.actionBikeListingFragmentToDisplayBikeDetailsFragment(bikeId)
+        val action = BikeListingFragmentDirections.actionBikeListingFragmentToDisplayBikeDetailsFragment(bikeId,args.userName)
         findNavController().navigate(action)
     }
 

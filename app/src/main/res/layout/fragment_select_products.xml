@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AccesoriesFragment">
+    tools:context="Fragments.FragmentSelectProducts">
 
     <LinearLayout
         android:orientation="vertical"
@@ -23,10 +23,10 @@
             android:layout_height="wrap_content"/>
 
         <EditText
-            android:id="@+id/editTextHours"
+            android:id="@+id/editTextTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"
+            android:inputType="textPersonName"
             android:padding="10dp"
             android:hint="Number of hours"
             android:layout_marginTop="20dp"/>
@@ -64,14 +64,15 @@
             android:text="Phone Stand ($2)" />
 
         <TextView
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:textSize="20sp"
-            android:text="Total: $0.0"
-            android:gravity="center"
-            android:textStyle="bold"
+            android:id="@+id/totalTextView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Total: $0.0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/buttonBook"

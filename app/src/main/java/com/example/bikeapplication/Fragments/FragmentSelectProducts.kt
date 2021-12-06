@@ -1,60 +1,95 @@
 package com.example.bikeapplication.Fragments
 
+import android.app.AlertDialog
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.bikeapplication.R
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
+import com.example.bikeapplication.ViewModel.MainViewModel
+import com.example.bikeapplication.databinding.FragmentSelectProductsBinding
+import kotlinx.android.synthetic.main.fragment_select_products.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [FragmentSelectProducts.newInstance] factory method to
- * create an instance of this fragment.
- */
 class FragmentSelectProducts : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    private val args : FragmentSelectProductsArgs by navArgs()
+    private lateinit var binding: FragmentSelectProductsBinding
+    private lateinit var viewModel: MainViewModel
+    private var totalPrice : Double = 0.0
+    private var basePrice : Double = 0.0
+    private var time: Double = 1.0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_select_products, container, false)
-    }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment FragmentSelectProducts.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            FragmentSelectProducts().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
+        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
+        binding = FragmentSelectProductsBinding.inflate(inflater,container,false)
+
+        viewModel.backendBikeDetails(args.selectedData)
+        viewModel.liveData.observe(viewLifecycleOwner, Observer {
+            if(it != null) {
+
+                basePrice = it.Price.toDouble()
+                totalPrice = basePrice
+
+
+                binding.buttonBook.setOnClickListener {
+                    time = binding.editTextTime.text.toString().toDoubleOrNull()?:0.0
+                    totalPrice *= time
+                    if (checkBoxHelmet.isChecked){
+                        totalPrice += 2
+                    }
+                    if (checkBoxLock.isChecked){
+                        totalPrice += 3
+                    }
+                    if (checkBoxBasket.isChecked){
+                        totalPrice += 2
+                    }
+                    if (checkBoxPhoneStand.isChecked){
+                        totalPrice += 2
+                    }
+                    Log.i("Total Price: ", totalPrice.toString())
+                    binding.totalTextView.setText("Total $"+totalPrice.toString())
+
+
+                    val builder = AlertDialog.Builder(requireContext())
+                    builder.setMessage("Total cost is $"+totalPrice+", would you like to proceed with payment?")
+                        .setCancelable(false)
+                        .setPositiveButton("Yes") { dialog, id ->
+                            val action = FragmentSelectProductsDirections.actionFragmentSelectProductsToFragmentPayment(args.selectedData, args.userName, totalPrice.toString())
+                            findNavController().navigate(action)
+                        }
+                        .setNegativeButton("No") { dialog, id ->
+                            // Dismiss the dialog
+                            totalPrice = basePrice
+                            checkBoxHelmet.isChecked = false
+                            checkBoxLock.isChecked = false
+                            checkBoxBasket.isChecked = false
+                            checkBoxPhoneStand.isChecked = false
+
+                            dialog.dismiss()
+                        }
+                    val alert = builder.create()
+                    alert.show()
+
                 }
+
             }
+
+            else {
+                Log.i("error","no data found")
+            }
+
+
+        })
+
+        return binding.root
     }
 }

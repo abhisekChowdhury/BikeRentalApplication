@@ -19,9 +19,6 @@ class DashboardFragment : Fragment() {
     private lateinit var binding: FragmentDashboardBinding
     private lateinit var viewModel: MainViewModel
 
-//    val CITY: String = "vancouver,bc"
-//    val API: String = "c8efb0bfd18451dfa4106515285bef09"
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -42,7 +39,9 @@ class DashboardFragment : Fragment() {
         }
 
         binding.bikerButton.setOnClickListener {
-            findNavController().navigate(R.id.action_dashboardFragment_to_bikeListingFragment)
+            val action = DashboardFragmentDirections.actionDashboardFragmentToBikeListingFragment(args.userName)
+            findNavController().navigate(action)
+            //findNavController().navigate(R.id.action_dashboardFragment_to_bikeListingFragment)
         }
 
 
@@ -66,20 +65,6 @@ class DashboardFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-
-
-
-
-        //weatherTask().execute()
     }
-
-//    inner class weatherTask() : AsyncTask<String, Void, String>()
-//    {
-//        override fun onPreExecute() {
-//            super.onPreExecute()
-//
-//        }
-//    }
-
 
 }
